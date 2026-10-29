@@ -40,8 +40,8 @@ const Footer = () => {
 
     return ( 
         <div className="p-5 bg-dark-gray text-white box-border ">
-            <footer className="flex flex-wrap justify-between items-start">
-                    <div className="flex flex-col max-w-xs">
+            <footer className="flex flex-wrap justify-between items-start pb-5">
+                    <div className="flex flex-col max-w-xs gap-5">
                         <Logo image={src}/>
                         <p >
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -53,10 +53,10 @@ const Footer = () => {
                             <li><TwitterLogoIcon size={20}/></li>
                         </ul>
                     </div>
-                    <div className="flex gap-10">
+                    <div className="flex gap-10 ">
                         <div className="max-w-36">
-                        <h3 className="">{info1.title}</h3>
-                        <ul>
+                        <h3 className="text-base">{info1.title}</h3>
+                        <ul className="text-sm">
                             {info1.informations.map((item , index)=>(
                                 <li key={index}><NavLink>{item.text}</NavLink></li>
                             ))}
@@ -64,16 +64,16 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="max-w-24">
-                        <h3>{info2.title}</h3>
-                        <ul>
+                        <h3 className="text-base">{info2.title}</h3>
+                        <ul className="text-sm">
                             {info2.informations.map((item , index)=>(
                                 <li key={index}><NavLink>{item.text}</NavLink></li>
                             ))}
                         </ul>
                     </div>            
                     <div className="max-w-60">
-                        <h3>{info3.title}</h3>
-                        <ul>
+                        <h3 className="text-base">{info3.title}</h3>
+                        <ul className="text-sm">
                             {info3.informations.map((item , index)=>(
                                 <li key={index}><NavLink>{item.text}</NavLink></li>
                             ))}
@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>    
                     </div>        
                 </footer>
-                <hr/>
+                <hr />
                 <p className="text-center p-5">© 2026 Digital Store</p>
         </div>
      );
