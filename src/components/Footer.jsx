@@ -40,7 +40,7 @@ const Footer = () => {
 
     return ( 
         <div className="p-5 bg-dark-gray text-white box-border ">
-            <footer className="flex flex-wrap justify-between items-start pb-5">
+            <footer className="flex flex-wrap justify-around items-start pb-5">
                     <div className="flex flex-col max-w-xs gap-5">
                         <Logo image={src}/>
                         <p >

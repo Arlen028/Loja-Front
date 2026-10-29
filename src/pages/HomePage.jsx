@@ -1,5 +1,11 @@
+import Products from "@/context/Products";
+
 const HomePage = () => {
-    return ( <></> );
+    return ( 
+        <div>
+            <Products/>
+        </div>
+    );
 }
  
 export default HomePage;

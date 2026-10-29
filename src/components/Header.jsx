@@ -9,7 +9,7 @@ import SearchInput from "./SearchIput";
 const Header = () => {
     return ( 
         <header className="p-5 w-full  flex flex-col gap-11"  >
-            <div className="flex justify-between items-center gap-2">
+            <div className="flex justify-around items-center gap-2">
                 <Logo image={src}/>
                 <SearchInput/>
                 <Nav/>
