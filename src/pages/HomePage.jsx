@@ -1,9 +1,13 @@
-import Products from "@/context/Products";
+import ProductListing from "@/components/ProductListing";
+import Section from "@/components/Section";
+
 
 const HomePage = () => {
     return ( 
         <div>
-            <Products/>
+            <Section title={"Produtos em Alta"} titleAlign="left" >
+                <ProductListing/>
+            </Section>
         </div>
     );
 }
