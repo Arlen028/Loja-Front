@@ -8,8 +8,8 @@ import SearchInput from "./SearchIput";
 
 const Header = () => {
     return ( 
-        <header className="p-5 w-full  flex flex-col gap-11"  >
-            <div className="flex justify-around items-center gap-2">
+        <header className="p-5 w-full  flex flex-col gap-10 bg-accent-foreground"  >
+            <div className="flex justify-around items-center gap-1">
                 <Logo image={src}/>
                 <SearchInput/>
                 <Nav/>
